@@ -1,0 +1,7 @@
+#!/usr/bin/env expect
+
+spawn service apache2 start
+expect "🔐 Enter passphrase for SSL/TLS keys for 127.0.1.1:443 (RSA): (press TAB for no echo) "
+send "harunabhishek\n"
+interact
+
